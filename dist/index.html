@@ -12,8 +12,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.min.js"></script>
+<!--[if IE 8]>
+    <style>
+        .header{ border-bottom: 1px solid #ccc; }
+    </style>
+<![endif]-->
 </head>
 <body>
 <div class="header clearfix">
@@ -29,8 +33,8 @@
         <li><a href="cta.html">联系我们</a></li>
     </ul>
     <div class="h-ctas">
-        <a href="#" class="tel"><i class="aico"></i><p class="num">400-0808-053</p></a>
-        <a href="#" class="weixin"><i class="aico"></i></a>
+        <a href="#" class="tel na"><i class="aico"></i><p class="num">400-0808-053</p></a>
+        <a href="img/ma.jpg" class="weixin"><i class="aico"></i></a>
         <a href="#" class="sina"><i class="aico"></i></a>
     </div>
     <div class="menu-handler">
@@ -40,7 +44,7 @@
     </div>
 </div>
 
-<div class="menuBox">
+<div class="menuBox" style="display: none;">
     <dl class="navMobile">
         <dd><a href="index.html">首页</a></dd>
         <dd><a href="about.html">关于皓源</a>
@@ -94,32 +98,190 @@
 
 <div class="mtop"></div>
 
-<div class="banner-box">
-	<div class="banner">
-    	<div class="item"></div>
-        <div class="item"></div>
+<div class="banner scroll-animation">
+    <div class="pic2"><img src="img/banner.jpg" alt=""></div>
+	<video id="vi" src="img/video.mp4" autoplay muted loop webkit-playsinline playsinline></video>
+    <span class="cover"></span>
+    <div class="txts tac">
+        <p class="en ttu transY trans">YUANHAOYUAN</p>
+        <p class="ti fwb transY trans dly-1">创造专属的高品质空气环境</p>
+        <p class="ch transY trans dly-2">海以其博大，纳百川而成其浩瀚；山以其厚重，历沧桑而为之雄厚</p>
+        <div class="more transY trans dly-3"><a data-video-url="img/video.mp4" data-video-image="img/banner.jpg" class="ix-more v-btn fib bubbly-button"><i class="ib">查看完整视频</i><i class="ib aico"></i></a></div>
+    </div>
+    <div class="scrolling-mouse">
+        <p>Scrolling Your Mouse To See More</p>
+        <span class="line"></span>
     </div>
 </div>
 
-<div class="container"></div>
+<div class="container">
+    <div class="ix1 pw">
+        <div class="ix-ab tac">
+            <p class="ti fwb">致力于提供高品质的空气环境解决方案</p>
+            <div class="tx">四川原皓源环境工程有限公司（原名成都皓源空调设备有限公司）创立于2010年，注册资金1000万元，是一家集家用、商用中央空调系统，供热系统，冷（冻）库工程，恒温恒湿系统，新节能环保工程，净化和通风工程的设计、安装、维修和保养，以及自控系统，专业音响会议系统，舞台灯光，大厦光彩安防，综合布线等弱电系统工程设计、销售、安装维护为一体的专业化工程公司。</div>
+            <div class="more"><a href="#" class="ia-more bubbly-button"><i class="bg"></i><p>了解更多 ></p></a></div>
+        </div>
+    </div>
+    
+    <div class="ix2 ix-pa">
+        <div class="ix-title white clearfix">
+            <p class="ti fwb">产品中心</p>
+            <a href="#" class="aico more"></a>
+        </div>
+        <ul class="ip-list clearfix">
+            <li><a href="#" class="ip-a ipm-h scapic">
+                <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
+                <span class="cover"></span>
+                <div class="txts">
+                    <span class="ico" style="background-image: url(../img/ix_ico1.png);"></span>
+                    <p class="ti">中央空调</p>
+                    <div class="tx">
+                        The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
+                    </div>
+                </div>
+                <span class="ip-more"><i class="x">read more</i><i class="aico"></i></span>
+            </a></li>
+            <li><a href="#" class="ip-a ipm-h scapic">
+                <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
+                <span class="cover"></span>
+                <div class="txts">
+                    <span class="ico" style="background-image: url(../img/ix_ico2.png);"></span>
+                    <p class="ti">采暖系统</p>
+                    <div class="tx">
+                        The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
+                    </div>
+                </div>
+                <span class="ip-more"><i class="x">read more</i><i class="aico"></i></span>
+            </a></li>
+            <li><a href="#" class="ip-a ipm-h scapic">
+                <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
+                <span class="cover"></span>
+                <div class="txts">
+                    <span class="ico" style="background-image: url(../img/ix_ico3.png);"></span>
+                    <p class="ti">新风系统</p>
+                    <div class="tx">
+                        The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
+                    </div>
+                </div>
+                <span class="ip-more"><i class="x">read more</i><i class="aico"></i></span>
+            </a></li>
+            <li><a href="#" class="ip-a ipm-h scapic">
+                <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
+                <span class="cover"></span>
+                <div class="txts">
+                    <span class="ico" style="background-image: url(../img/ix_ico4.png);"></span>
+                    <p class="ti">净水系统</p>
+                    <div class="tx">
+                        The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
+                    </div>
+                </div>
+                <span class="ip-more"><i class="x">read more</i><i class="aico"></i></span>
+            </a></li>
+        </ul>
+        <div class="dec-en tac"><img src="images/en.png" alt=""></div>
+    </div>
+    
+    <div class="ix3">
+        <ul class="isp-list clearfix">
+            <li><a href="#" class="scapic isp-a">
+                <div class="pic"><img src="img/ix_2.jpg" alt=""></div>
+                <span class="cover"></span>
+                <div class="txts">
+                    <p class="ch fwb">高端住宅</p>
+                    <span class="line"></span>
+                    <p class="en">High End<br>House</p>
+                </div>
+            </a></li> 
+            <li><a href="#" class="scapic isp-a">
+                <div class="pic"><img src="img/ix_3.jpg" alt=""></div>
+                <span class="cover"></span>
+                <div class="txts">
+                    <p class="ch fwb">高端住宅</p>
+                    <span class="line"></span>
+                    <p class="en">High End<br>House</p>
+                </div>
+            </a></li>
+            <li><a href="#" class="scapic isp-a">
+                <div class="pic"><img src="img/ix_4.jpg" alt=""></div>
+                <span class="cover"></span>
+                <div class="txts">
+                    <p class="ch fwb">高端住宅</p>
+                    <span class="line"></span>
+                    <p class="en">High End<br>House</p>
+                </div>
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="ix4 fixbg ix-pa" style="background-image: url(img/ix_bg1.jpg);">
+        <div class="ix-title white clearfix">
+            <p class="ti fwb">服务中心</p>
+            <a href="ser.html" class="aico more"></a>
+        </div>
+        <div class="is-box tac">
+            <div class="pa">
+                <p class="ti fwb">追求客户满意度 追求零缺陷</p>
+                <div class="tx">公司将继续把优质、完善、及时、周到的售前、售中、售后服务奉献给每一位皓源的客户</div>
+                <div class="more"><a href="" class="ix-more is-more fib bubbly-button"><i class="ib">了解更多服务</i><i class="ib aico"></i></a></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ix5 ix-pa">
+        <div class="ix-title clearfix">
+            <p class="ti fwb">施工流程</p>
+            <a href="ser.html" class="aico more"></a>
+        </div>
+        <ul class="cp-list fib">
+            <li class="ib"><a href="index-ajax.html">
+                <span class="ico bubbly-button" style="background-image: url(img/cp_ico1.png);"></span>
+                <p class="ti fwb">施工流程</p>
+            </a></li>
+            <li class="ib"><a href="index-ajax.html">
+                <span class="ico bubbly-button" style="background-image: url(img/cp_ico2.png);"></span>
+                <p class="ti fwb">施工流程</p>
+            </a></li>
+            <li class="ib"><a href="index-ajax.html">
+                <span class="ico bubbly-button" style="background-image: url(img/cp_ico3.png);"></span>
+                <p class="ti fwb">施工流程</p>
+            </a></li>
+            <li class="ib"><a href="index-ajax.html">
+                <span class="ico bubbly-button" style="background-image: url(img/cp_ico4.png);"></span>
+                <p class="ti fwb">施工流程</p>
+            </a></li>
+            <li class="ib"><a href="index-ajax.html">
+                <span class="ico bubbly-button" style="background-image: url(img/cp_ico5.png);"></span>
+                <p class="ti fwb">施工流程</p>
+            </a></li>
+        </ul>
+    </div>
+    
+</div>
 
 <div class="footer">
 </div>
 <script src="js/plugin.js"></script>
-<script src="js/page.js"></script>
 
+<div class="vwrap">
+    <div class="videobtg"></div>
+    <div class="videobox">
+        <div id="videobox"></div>
+        <div class="close"><i></i></div>
+    </div>
+</div>
+<script src="js/video/player.mini.js"></script>
+<script src="js/page.js"></script>
 <script>
+    var k = $('.cp-list li').length;
     function indexBox(){
         if(!isMobile){
-            $('.banner-box').css({ height: w_height - $mtoph });
             $('.banner').css({ height: w_height - $mtoph });
-            $('.banner .item').css({ height: w_height - $mtoph });
-            setImgMax($('.banner .pic2'), 1800, 840, w_width, w_height - $mtoph);
+            setImgMax($('.banner .pic2'), 1920, 980, w_width, w_height - $mtoph);
+            setImgMax($('#vi'), 1440, 1080, w_width, w_height - $mtoph);
         }else{
-            $('.banner-box').css({ height: 'auto' });
             $('.banner').css({ height: 'auto' });
-            $('.banner .item').css({ height: 'auto' });
-            $('.banner .pic2').attr({ 'style': '' })
+            $('.banner .pic2').attr({ 'style': '' });
+            $('#vi').attr({ 'style': '' });
         }
     };
     indexBox();
@@ -127,27 +289,37 @@
         indexBox();
     });
     $(function(){
-        $('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
-            $('.banner .item').first().addClass('active');
+        function getAjaxHtml(item,address,num){
+            $.ajax({
+                url: address,
+                dataType: "html",
+                success: function (data) {
+                    if (data == "" || data == null) {
+                        return;
+                    } else {
+                        if ($('.cp-tx').size() !== 0) { $('.cp-tx').remove(); }
+                        $('.cp-list li').eq(num).after(data);
+                        $('.cp-list a').removeClass('act');
+                        item.addClass('act');
+                        setTimeout(function(){
+                            $('.cp-tx').addClass('show');
+                        },100);
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    $('.cp-tx').remove();
+                }
+            })
+        };
+        $(document).on(_click,'.cp-list a',function(e){
+            e.preventDefault();
+            var n = (Math.floor($(this).parent().index() / k) + 1) * k - 1;
+            if( n > $('.cp-list li').length - 1)
+                n = $('.cp-list li').length - 1;
+            getAjaxHtml($(this), $(this).attr('href'), n);
+            $('html,body').stop().animate({scrollTop: $('.ix5').offset().top - $mtoph}, 400);
         });
-        var bannerSlick = $('.banner').slick({
-            speed: 1000,
-            arrows: true,
-            dots: true,
-            autoplay: false,
-            autoplaySpeed: 5000,
-            fade: true,
-            pauseOnHover: false
-        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            $('.banner .item').removeClass('active');
-            $('.banner .item').eq(nextSlide).addClass('active');
-        });
-        $('.inw-list li').each(function(i, e) {
-            $(this).css({
-                'transition-delay': 200*i + 'ms',
-                '-webkit-transition-delay': 200*i + 'ms'
-            });
-        });
+        getAjaxHtml($('.cp-list li').eq(0).find('a'), $('.cp-list li').eq(0).find('a').attr('href'), k - 1);
     })
 </script>
 </body>
