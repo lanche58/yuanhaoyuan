@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>原皓源</title>
+<title>四川原皓源环境工程有限公司</title>
 <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -44,7 +44,8 @@
     </div>
 </div>
 
-<div class="menuBox" style="display: none;">
+<div class="menuBlack cover"></div>
+<div class="menuBox">
     <dl class="navMobile">
         <dd><a href="index.html">首页</a></dd>
         <dd><a href="about.html">关于皓源</a>
@@ -259,7 +260,38 @@
 </div>
 
 <div class="footer">
+	<div class="pw">
+		<div class="clearfix">
+			<div class="f-ctas">
+				<p><a href="#">ADD：成都市高新区天仁路387号大鼎世纪广场2栋606</a></p>
+				<p><a href="tel:02885431466" class="na">TEL：028-85431466</a><i>/</i><span>FAX：028-85441455</span></p>
+			</div>
+			<div class="f-links">
+				<div class="friendship-link">
+	                <p class="s">友情链接<i class="aico"></i></p>
+	                <div class="k">
+	                    <div class="g">
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                        <a href="#" class="nowti">友情链接</a>
+	                    </div>
+	                </div>
+	            </div>
+	            <a href="#" class="lk">企业邮箱</a>
+			</div>
+		</div>
+		<p class="f-cop">COPYRIGHT© 四川原皓源环境工程有限公司<span>川公网安备 51012902000029号</span><a href="#">网站设计：赛门仕博</a></p>
+	</div>
 </div>
+<div id="top" class="ttu tac">top</div>
 <script src="js/plugin.js"></script>
 
 <div class="vwrap">
@@ -274,6 +306,11 @@
 <script>
     var k = $('.cp-list li').length;
     function indexBox(){
+        if (w_width <= 861) {
+            k = 3;
+        } else {
+            k = $('.cp-list li').length;
+        }
         if(!isMobile){
             $('.banner').css({ height: w_height - $mtoph });
             setImgMax($('.banner .pic2'), 1920, 980, w_width, w_height - $mtoph);
@@ -313,13 +350,17 @@
         };
         $(document).on(_click,'.cp-list a',function(e){
             e.preventDefault();
-            var n = (Math.floor($(this).parent().index() / k) + 1) * k - 1;
+            var $this = $(this);
+            var n = (Math.floor($this.parent().index() / k) + 1) * k - 1;
             if( n > $('.cp-list li').length - 1)
                 n = $('.cp-list li').length - 1;
-            getAjaxHtml($(this), $(this).attr('href'), n);
-            $('html,body').stop().animate({scrollTop: $('.ix5').offset().top - $mtoph}, 400);
+            getAjaxHtml($this, $this.attr('href'), n);
+            $('html,body').animate({scrollTop: $this.parent().offset().top - $mtoph}, 800);
         });
         getAjaxHtml($('.cp-list li').eq(0).find('a'), $('.cp-list li').eq(0).find('a').attr('href'), k - 1);
+        $(window).resize(function () {
+             getAjaxHtml($('.cp-list li').eq(0).find('a'), $('.cp-list li').eq(0).find('a').attr('href'), k - 1);
+        });
     })
 </script>
 </body>
