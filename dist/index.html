@@ -137,7 +137,7 @@
                 <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
                 <span class="cover"></span>
                 <div class="txts">
-                    <span class="ico" style="background-image: url(../img/ix_ico1.png);"></span>
+                    <span class="ico" style="background-image: url(img/ix_ico1.png);"></span>
                     <p class="ti">中央空调</p>
                     <div class="tx">
                         The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
@@ -149,7 +149,7 @@
                 <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
                 <span class="cover"></span>
                 <div class="txts">
-                    <span class="ico" style="background-image: url(../img/ix_ico2.png);"></span>
+                    <span class="ico" style="background-image: url(img/ix_ico2.png);"></span>
                     <p class="ti">采暖系统</p>
                     <div class="tx">
                         The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
@@ -161,7 +161,7 @@
                 <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
                 <span class="cover"></span>
                 <div class="txts">
-                    <span class="ico" style="background-image: url(../img/ix_ico3.png);"></span>
+                    <span class="ico" style="background-image: url(img/ix_ico3.png);"></span>
                     <p class="ti">新风系统</p>
                     <div class="tx">
                         The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
@@ -173,7 +173,7 @@
                 <div class="pic"><img src="img/ix_1.jpg" alt=""></div>
                 <span class="cover"></span>
                 <div class="txts">
-                    <span class="ico" style="background-image: url(../img/ix_ico4.png);"></span>
+                    <span class="ico" style="background-image: url(img/ix_ico4.png);"></span>
                     <p class="ti">净水系统</p>
                     <div class="tx">
                         The company adheres to the aim of "providing high quality air environment solutions", pursuing zero defects...
@@ -236,28 +236,44 @@
             <p class="ti fwb">施工流程</p>
             <a href="ser.html" class="aico more"></a>
         </div>
-        <ul class="cp-list fib">
-            <li class="ib transX trans"><a href="index-ajax.html">
-                <span class="ico bubbly-button" style="background-image: url(img/cp_ico1.png);"></span>
-                <p class="ti fwb">施工流程</p>
-            </a></li>
-            <li class="ib transX trans"><a href="index-ajax.html">
-                <span class="ico bubbly-button" style="background-image: url(img/cp_ico2.png);"></span>
-                <p class="ti fwb">施工流程</p>
-            </a></li>
-            <li class="ib transX trans"><a href="index-ajax.html">
-                <span class="ico bubbly-button" style="background-image: url(img/cp_ico3.png);"></span>
-                <p class="ti fwb">施工流程</p>
-            </a></li>
-            <li class="ib transX trans"><a href="index-ajax.html">
-                <span class="ico bubbly-button" style="background-image: url(img/cp_ico4.png);"></span>
-                <p class="ti fwb">施工流程</p>
-            </a></li>
-            <li class="ib transX trans"><a href="index-ajax.html">
-                <span class="ico bubbly-button" style="background-image: url(img/cp_ico5.png);"></span>
-                <p class="ti fwb">施工流程</p>
-            </a></li>
-        </ul>
+        <div class="cp-list u-silck transX trans">
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico1.png);"></span>
+                <p class="ti fwb">进场准备</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico2.png);"></span>
+                <p class="ti fwb">细致打磨丝杆</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico3.png);"></span>
+                <p class="ti fwb">空调拆箱</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico4.png);"></span>
+                <p class="ti fwb">专业防尘处理</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico5.png);"></span>
+                <p class="ti fwb">精确测量尺寸</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico6.png);"></span>
+                <p class="ti fwb">搭建专业桥架</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico7.png);"></span>
+                <p class="ti fwb">吊装空调内机</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico8.png);"></span>
+                <p class="ti fwb">内机安装完成</p>
+            </a></div>
+            <div class="item"><a href="index-ajax.html" class="cpa">
+                <span class="ico" style="background-image: url(img/cp_ico9.png);"></span>
+                <p class="ti fwb">贴心垃圾处理</p>
+            </a></div>
+        </div>
     </div>
     
 </div>
@@ -307,13 +323,7 @@
 <script src="js/video/player.mini.js"></script>
 <script src="js/page.js"></script>
 <script>
-    var k = $('.cp-list li').length;
     function indexBox(){
-        if (w_width <= 861) {
-            k = 3;
-        } else {
-            k = $('.cp-list li').length;
-        }
         if(!isMobile){
             $('.banner').css({ height: w_height - $mtoph });
             setImgMax($('.banner .pic2'), 1920, 980, w_width, w_height - $mtoph);
@@ -329,7 +339,7 @@
         indexBox();
     });
     $(function(){
-        function getAjaxHtml(item,address,num){
+        function getAjaxHtml(item,address){
             $.ajax({
                 url: address,
                 dataType: "html",
@@ -338,8 +348,8 @@
                         return;
                     } else {
                         if ($('.cp-tx').size() !== 0) { $('.cp-tx').remove(); }
-                        $('.cp-list li').eq(num).after(data);
-                        $('.cp-list a').removeClass('act');
+                        $('.cp-list').after(data);
+                        $('.cp-list .cpa').removeClass('act');
                         item.addClass('act');
                         setTimeout(function(){
                             $('.cp-tx').addClass('show');
@@ -351,19 +361,12 @@
                 }
             })
         };
-        $(document).on(_click,'.cp-list a',function(e){
+        $(document).on(_click,'.cp-list .cpa',function(e){
             e.preventDefault();
             var $this = $(this);
-            var n = (Math.floor($this.parent().index() / k) + 1) * k - 1;
-            if( n > $('.cp-list li').length - 1)
-                n = $('.cp-list li').length - 1;
-            getAjaxHtml($this, $this.attr('href'), n);
-            $('html,body').animate({scrollTop: $this.parent().offset().top - $mtoph}, 800);
+            getAjaxHtml($this, $this.attr('href'));
         });
-        getAjaxHtml($('.cp-list li').eq(0).find('a'), $('.cp-list li').eq(0).find('a').attr('href'), k - 1);
-        $(window).resize(function () {
-             getAjaxHtml($('.cp-list li').eq(0).find('a'), $('.cp-list li').eq(0).find('a').attr('href'), k - 1);
-        });
+        getAjaxHtml($('.cp-list .item').eq(0).find('.cpa'), $('.cp-list .item').eq(0).find('.cpa').attr('href'));
 
         $('.ip-list li').each(function(i, e) {
             $(this).css({
@@ -371,13 +374,34 @@
                 '-webkit-transition-delay': 200*i + 'ms'
             });
         });
-
-         $('.cp-list li').each(function(i, e) {
-            $(this).css({
-                'transition-delay': 200*i + 'ms',
-                '-webkit-transition-delay': 200*i + 'ms'
-            });
-        });
+        $('.cp-list').slick({
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    }
+                },
+                {
+                    breakpoint: 862,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 602,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+            ]
+        })
     })
 </script>
 </body>
